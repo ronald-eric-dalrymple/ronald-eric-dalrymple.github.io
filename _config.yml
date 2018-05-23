@@ -1,0 +1,43 @@
+# Site settings
+title: Ronald Eric Dalrymple
+description: 'Playwright - Author of "The Translator"'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/ronald-eric-dalrymple'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Ronald Eric Dalrymple'
+  email: dalrymples@sympatico.ca
+  twitter_username: rondalrymple
+  facebook_username: rondalrymple
+  github_username:  rondalrymple
+  linkedin_username:  rondalrymple
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
